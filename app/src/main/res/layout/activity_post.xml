@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="18dp"
+        android:layout_weight="1"
+        android:textColor="@color/title"
+        android:text="武汉"
+        android:textSize="@dimen/activity_post_address_font" />
+
+    <TextView
+        android:id="@+id/timeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="30dp"
+        android:text="时间："
+        android:textSize="@dimen/activity_post_tag_font" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/timeText"
+        android:layout_toRightOf="@id/timeText"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:text="5天"
+        android:textSize="@dimen/activity_post_tag_font" />
+
+    <TextView
+        android:id="@+id/costText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/timeText"
+        android:layout_toRightOf="@id/time"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="0dp"
+        android:text="花费："
+        android:textSize="@dimen/activity_post_tag_font" />
+
+    <TextView
+        android:id="@+id/cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/timeText"
+        android:layout_toRightOf="@id/costText"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:textSize="@dimen/activity_post_tag_font"
+        android:text="5000元" />
+
+    <TextView
+        android:id="@+id/addressText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/timeText"
+        android:layout_toRightOf="@id/cost"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="0dp"
+        android:textSize="@dimen/activity_post_tag_font"
+        android:text="地点：" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/timeText"
+        android:layout_toRightOf="@id/addressText"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:textSize="@dimen/activity_post_tag_font"
+        android:text="武汉" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timeText"
+        android:layout_margin="15dp"
+        android:textSize="@dimen/activity_post_content_font"
+        android:lineSpacingMultiplier="1.8"
+        android:text="出于安全考虑，患有精神病、颈椎病、高血压、心脏病、
+        癫痫病、腰椎病、骨折及运动障碍的患者、过量饮酒的游客、孕妇、
+        1.2米以下的儿童，55岁以上老人以及其他被漂流管理人员建议不宜参加
+        的游客，严禁参与漂流活动。以上疾病类型只是简要示例，如游客尚有其他疾
+        病可能不适合参加旅游活动的，请主动向旅行社告知或咨询。" />
+
+    <TextView
+        android:id="@+id/author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/timeText"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:textSize="@dimen/activity_post_tag_font"
+        android:textColor="@color/authorName"
+
+        android:text="飞翔的猪" />
+</RelativeLayout>
